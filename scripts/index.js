@@ -55,7 +55,7 @@ $(document).ready(function(){
                 cardBody.className = 'card-body';
 
                 let cardTitle = document.createElement('h5');
-                cardTitle.className = 'card-title';
+                cardTitle.className = 'card-title text-break'
                 cardTitle.innerText = repo.name;
                 cardBody.appendChild(cardTitle);
 
