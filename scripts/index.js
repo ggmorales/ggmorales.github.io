@@ -1,28 +1,30 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     /* Main menu clicks handlers */
-    $("#aboutme-button").on("click", function() {
+    $("#aboutme-button").on("click", function () {
         $("html, body").animate({
             scrollTop: $("#about-me").offset().top
-        }, 400, "swing", function() {
+        }, 400, "swing", function () {
         });
     });
 
-    $("#projects-button").on("click", function() {
+    $("#projects-button").on("click", function () {
         $("html, body").animate({
             scrollTop: $("#projects").offset().top
-        }, 400, "swing", function() {
+        }, 400, "swing", function () {
         });
     });
 
-    result = $.get('https://api.github.com/users/ggmorales/repos', function(response){
+   
+
+    result = $.get('https://api.github.com/users/ggmorales/repos', function (response) {
         var projects = document.getElementById('projects-cards-container');
         response.forEach(repo => {
-            if(repo.name != 'ggmorales.github.io'){
+            if (repo.name != 'ggmorales.github.io') {
                 let newCard = document.createElement('div');
                 newCard.className = 'card mb-3 bg-light text-dark';
                 newCard.style = "max-width: 540px;"
-                
+
                 let cardRow = document.createElement('div');
                 cardRow.className = 'row g-0 align-items-center';
 
@@ -36,8 +38,8 @@ $(document).ready(function(){
                 var request = new XMLHttpRequest();
                 request.open("GET", "https://ggmorales.github.io/resources/" + repo.name + ".png", true);
                 request.send()
-                request.onload = function(){
-                    if (request.status == 200){
+                request.onload = function () {
+                    if (request.status == 200) {
                         cardImage.src = "./resources/" + repo.name + ".png";
                     } else {
                         image_name = "work_in_progress"
@@ -75,11 +77,22 @@ $(document).ready(function(){
                 let cardButtonContainer = document.createElement('p');
                 cardButtonContainer.className = 'card-button-container';
                 let cardButton = document.createElement('a');
-                cardButton.className = 'btn btn-primary card-button'
+                cardButton.className = 'btn btn-primary card-button me-2'
                 cardButton.innerText = 'See more';
                 cardButton.href = repo.html_url;
                 cardButton.target = '_blank';
                 cardButtonContainer.appendChild(cardButton);
+
+                if (repo.name === "TFG_Estadistica") {
+                    let additionalButton = document.createElement('a');
+                    additionalButton.className = 'btn btn-primary card-button';
+                    additionalButton.innerText = 'App web';
+                    additionalButton.href = "https://ggmorales.shinyapps.io/App_web_TFG/";
+                    additionalButton.target = '_blank';
+                    cardButtonContainer.appendChild(additionalButton);
+                }
+
+
                 cardBody.appendChild(cardButtonContainer);
 
                 newCardCol2.appendChild(cardBody);
@@ -92,6 +105,6 @@ $(document).ready(function(){
                 projects.appendChild(newCard);
             }
         });
-        
+
     })
 });

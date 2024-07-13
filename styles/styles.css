@@ -1,0 +1,191 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E3653 !important; /* Fondo blanco */
+    color: #333333; /* Texto principal en gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #004080; /* Azul oscuro para encabezados */
+}
+
+/* Link styles */
+a {
+    color: #004080; /* Azul oscuro para enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #1E3653; /* Azul claro para botones */
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1E3653; /* Un poco más oscuro al pasar el ratón */
+}
+
+/* Container styles */
+.container-fuid, .container-sm {
+    padding: 20px;
+}
+
+/* Card styles */
+.card {
+    border: 1px solid gray;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+/* Image styles */
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Margin between buttons */
+.card-button + .card-button {
+    margin-left: 10px;
+}
+
+/* Specific sections */
+#banner {
+    background-color: #1e3653; /* Fondo gris claro para el banner */
+}
+
+#menu{
+    padding-top: 5%;
+}
+
+#projects {
+    background-color: #f9f9f9; /* Fondo muy claro para la sección de proyectos */
+}
+
+#projects h2 {
+    color: #004080; 
+    font-family: 'Black Ops One';
+    margin: 3%;
+    margin-bottom: 3%;
+}
+
+#welcome{
+    background-color: #1E3653;
+    color: white;
+    
+}
+
+#welcome #name h1,h2{
+    color: white;
+    
+}
+#name h1{
+    font-family: 'Black Ops One'
+}
+
+#contact h2{
+    color: #004080;
+}
+
+#about-me h2{
+    color: #004080;
+    font-family: 'Black Ops One'
+}
+#contact h2{
+    margin-top: 1em;
+    margin-bottom: 3%;
+}
+
+
+.col-2 i{
+    color: yellow;
+}
+
+.col-2 i:hover{
+    background-color: #1e3653;
+    color: white;
+    
+}
+
+.custom-border {
+    border: 5px solid white; /* Ajusta el grosor según sea necesario */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
+
+.col-sm-3 div{
+    background-color: yellow;
+    font-size: large;
+    font-weight: bold;
+    color: #1E3653;
+}
+#cv-button{
+    background-color: yellow;
+    font-size: large;
+    font-weight: bold;
+    color: #1E3653;
+}
+
+.col-sm-3 div:hover{
+    background-color: white;
+    color: #1E3653;
+}
+#cv-button:hover{
+    background-color: white;
+    color: #1E3653;
+    text-decoration: none; /* Elimina la línea debajo del texto */
+    
+}
+
+#contact h2{
+    color: white;
+    font-family: 'Black Ops One';
+}
+#about-me {
+    background-color: white; /* Fondo blanco */
+    border: 2px solid black; /* Borde negro */
+    border-radius: 20px; /* Esquinas redondeadas */
+    padding: 20px; /* Espacio interno (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave (opcional) */
+    font-weight: bold;
+}
+
+.card-title{
+    font-weight: bold;
+    color:darkred
+}
+
+.card-text{
+    color: black;
+}
+
+
+@media (max-width: 576px) {
+    #menu .col-sm-3 {
+        margin-bottom: 3%; /* Añade espacio entre los iconos en dispositivos móviles */
+    }
+
+    #name{
+        margin-top: 7%;
+    }
+    
+}
