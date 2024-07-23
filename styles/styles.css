@@ -196,4 +196,7 @@ a:hover {
     #portrait-image{
         height: 90%;
     }
+    .img-fluid{
+        padding-top: 5%;
+    }
 }
