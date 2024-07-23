@@ -94,6 +94,11 @@ a:hover {
     color: white;
     
 }
+#portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #welcome #name h1,h2{
     color: white;
@@ -188,5 +193,7 @@ a:hover {
     #name{
         margin-top: 7%;
     }
-    
+    #portrait-image{
+        height: 90%;
+    }
 }
