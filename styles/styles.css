@@ -40,13 +40,14 @@ a:hover {
 
 /* Card styles */
 .card {
-    border: 1px solid gray;
+    border: 1px solid #1e3653;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .card-body {
     padding: 20px;
+    background-color: #1e3653;
 }
 
 .card-title {
@@ -134,7 +135,7 @@ a:hover {
 }
 
 .custom-border {
-    border: 5px solid white; /* Ajusta el grosor según sea necesario */
+    border: 5px solid #1e3653; /* Ajusta el grosor según sea necesario */
     border-radius: 5px; /* Opcional: esquinas redondeadas */
 }
 
@@ -177,11 +178,22 @@ a:hover {
 
 .card-title{
     font-weight: bold;
-    color:darkred
+    color:#ffd343
 }
 
 .card-text{
-    color: black;
+    color: white;
+}
+.card-button{
+    color:#1e3653;
+    background-color: #ffd343;
+}
+.card-image-col{
+    background-color: #1e3653;
+}
+
+.g-0{
+    background-color: #1e3653;
 }
 
 
@@ -196,8 +208,8 @@ a:hover {
     #portrait-image{
         height: 90%;
         padding-top: 0.7%;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding-left: 0.9%;
+        padding-right: 0.9%;
         padding-bottom: 1%;
     }
     .img-fluid{
