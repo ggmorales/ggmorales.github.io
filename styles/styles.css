@@ -195,6 +195,10 @@ a:hover {
     }
     #portrait-image{
         height: 90%;
+        padding-top: 0.7%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 1%;
     }
     .img-fluid{
         padding-top: 5%;
