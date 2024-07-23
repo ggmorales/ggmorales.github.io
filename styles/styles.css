@@ -119,7 +119,7 @@ a:hover {
 
 
 .col-2 i{
-    color: yellow;
+    color: #ffd343;
 }
 
 .col-2 i:hover{
@@ -134,13 +134,13 @@ a:hover {
 }
 
 .col-sm-3 div{
-    background-color: yellow;
+    background-color: #ffd343;
     font-size: large;
     font-weight: bold;
     color: #1E3653;
 }
 #cv-button{
-    background-color: yellow;
+    background-color: #ffd343;
     font-size: large;
     font-weight: bold;
     color: #1E3653;
