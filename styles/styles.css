@@ -101,11 +101,19 @@ a:hover {
     align-items: center;
 }
 
-#welcome #name h1,h2{
+#welcome #name h1{
     color: white;
-    font-family: 'Black Ops One';
-    
+    font-family: 'Black Ops One';  
 }
+#welcome #name h2{
+    color:white;
+    font-family: 'Black Ops One';
+}
+#welcome #name h3{
+    color:#ffd343;
+    font-family: 'Black Ops One';
+}
+
 #name h1{
     font-family: 'Black Ops One'
 }
